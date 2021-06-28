@@ -229,12 +229,12 @@ svg circle:nth-child(2){
 
 /*********************contact*************************/
 #contact{width: 100%;  background:whitesmoke; background-image: url(../img/bg1_1.jpg); background-size: cover; background-position: 50% 70%;}
-#contact .act{width: 100%; height: 100%;padding: 12% 5% 5%;  position: relative;}
+#contact .act{width: 100%; height: 100%;padding: 12% 0;  position: relative; margin: 0 auto;}
 
 #contact .act > h3{text-align: center; color: #fdf; font-size: 46px; padding: 2% 0;}
 #contact .act > p{text-align: center; color: #fef; font-size: 36px; padding-bottom: 3%;}
 
-#contact .act .intro{width: 1000px; margin: 0 auto;}
+#contact .act .intro{width: 70%; height: auto; margin: 0 auto;}
 #contact .act .intro ul{width: 100%;}
 #contact .act .intro ul li{width: 33%; text-align: center; float: left;}
 #contact .act .intro ul li p{font-size: 28px; color:#fef; padding: 20px 0;}
@@ -279,7 +279,33 @@ svg circle:nth-child(2){
     #sentences .act .main{display: block; text-align: center;}
     #sentences .act .main .left_part{width: 100%;}
     #sentences .act .main .right_part{margin-left: 0;}
+
+    #contact{height: 100vh;}
 }
+
+@media (max-width:900px){
+    #contact{height: 1100px;}
+    #contact .act .intro ul{display: block; }
+    #contact .act .intro ul li{display: inline-block; margin: 0 7%; float: none;}
+    #contact .act .intro ul li:last-child{margin: 0 30%;}
+    
+    #contact .act .intro ul li h2{margin: 5px auto;}
+}
+
+@media (max-width:700px){
+    header{opacity: 0; z-index: -10;}
+    header.sticky{z-index: -10;}
+
+    #contact .act > p{word-break: keep-all;}
+    #contact .act > h3{word-break:keep-all;}
+}
+
+@media (max-width:700px){
+    #contact{height: 1000px;}
+    #contact .act .intro ul{width: 100%;}
+    #contact .act .intro ul li{display: block; float: none; margin: 0 auto;}
+}
+
 @media (max-width:575px){
     .about .intro{flex-direction: column; justify-content: center;}
     .about .picture .img{margin-top: 6%;}
@@ -297,8 +323,12 @@ svg circle:nth-child(2){
     #skill .frame .box{width: calc(100% / 2 - 10px); }
 
     #skill .cont_frame .cont_box .card{width: calc(100% / 2 - 40px); height: 250px;}
+
     #portfolio{height: 780px;}
     #portfolio .popup ul li .wrap > div.port_img .memo{right: 40%;}
+   
+   
+   
 }
 
 
