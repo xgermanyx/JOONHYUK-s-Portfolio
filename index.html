@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOONHYUK's Portfolio</title>
+    <link rel="shortcut icon" href="./img/cloud.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="https://kit.fontawesome.com/f152badc40.js" crossorigin="anonymous"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/typed.js"></script>
+    <script src="./js/script.js"></script>
+    <style type="text/css">
+        
+    </style>
+     <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+    <div class="first_screen">
+        <h3>DO YOU WANT TO SEE</h3>
+        <p>JOON HYUK'S PORTFOLIO ??</p>
+        <div class="button-container wow shake">    
+            <button id='work' type="button">CLICK HERE</button>
+            
+        </div>
+        <div id="cursor"></div>
+        <script>
+            var cursor = document.getElementById("cursor");
+            document.addEventListener("mousemove", function(e){
+                console.log(e);
+                var x = e.pageX;
+                var y = e.pageY;
+                cursor.style.left = x + "px";
+                cursor.style.top = y + "px";
+            })
+        </script>        
+    </div>
+
+    <header class="show">
+        <ul>
+            <li class="active"><a href="#">ABOUT</a></li>
+            <li><a href="#">SKILL</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">SENTENCES</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="box active about">
+            <div class="act">
+                <h2>ABOUT</h2>
+                <div class="intro">
+                   
+                    <div class="picture wow bounceInLeft" data-wow-offset="10" data-wow-delay="0.8s"> 
+                        <div class="img">
+                            <img src="./img/joon2.jpg"  alt="소개사진">
+                            <div class="outerline"></div>
+                        </div>
+                        <div class="intro_cont">
+                            <p>안녕하십니까! <br>
+                            누구보다 열심히 최선을 다하며, 꼼꼼하고 세심하게 일할 수 있는 지원자입니다!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cont wow bounceInRight" data-wow-offset="10" data-wow-delay="1.2s">  
+                        <p>저는 웹 퍼블리셔를 꿈꾸는 <span class="b"> 최준혁</span>입니다. <br></p>
+                        <div class="img">
+                            <div class="front">
+                                <img src="./img/pic.jpg" alt="이미지">
+                            </div>
+                            <div class="back">
+                                <img src="./img/flip_back.jpg" alt="이미지">
+                            </div>
+                        </div>
+                        <p>저는 탄탄한 코드 위에 감각적인 UI를 그려냅니다. <br>
+                        <span class="b">CSS와 JavaScript</span>를 활용한 동적 모션을 좋아하고, 
+                        <span class="b">고객</span>의 입장에서 생각하는 걸 좋아해서 <br>계속 고민하며 더 나은 방향에 대해 사람들과 이야기를 나누곤 합니다. <br> </p>
+                        
+                        
+                        <p>좋아하는 일을 즐기면서 잘하는 것,
+                        <span class="b">제가 꿈꾸는 저의 모습</span>입니다.</p>
+
+                        <i class="far fa-hand-point-left"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box" id="skill">
+            <div class="act">
+                <h2 class="wow bounceInLeft" data-wow-offset="10" data-wow-delay="0.8s">MY SKILL</h2>    
+                <div class="frame"></div>
+                <h3 class="wow bounceInRight" data-wow-offset="10" data-wow-delay="1.3s">DIFFERENT TYPE OF EXPERIENCES</h3>
+                <div class="cont_frame wow bounceInRight" data-wow-offset="10" data-wow-delay="1.6s">
+                    <div class="cont_box"></div> 
+                </div>  
+            </div>
+        </section>
+
+
+        <section class="box" id="portfolio">
+            <div class="act">
+                <div class="main">
+                    <div class="type_wrap">
+                        <h3 class="text_type"><span class="typed"></span></h3>
+                    </div>
+                    <div class="mac"> 
+                        
+                        <button class="button">Click!!</button>
+                    </div>
+                </div>
+                <div class="backgroud"></div>
+                <div class="popup">
+                    <ul>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="box" id="sentences">
+            <div class="act">
+                <div class="main">
+                    <div class="left_part">
+                        <h2>이런 문장이 저에게는 어울립니다.</h2>
+                    </div>
+                    <div class="right_part">
+                        <ul>
+                            <li><p>✓무한 공부를 하며 계속해서 성장하는!</p></li>
+                            <li><p>✓업무가 많거나 힘들때는 즐기면서!</p></li>
+                            <li><p>✓성장하더라도 항상 겸손하게!</p></li>
+                            <li><p>✓팀원들과 협업하며 같이 성장하는!</p></li>
+                        </ul>
+                        <button><a href="https://drive.google.com/file/d/1vnT4PaGh51OjrEVcHC09BPJ8E-HgbWFV/view">이력서 (링크) ←←</a></button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="box" id="contact">
+            <div class="act">
+                <h3>CONTACT</h3>
+                <p>연락 주시면 최대한 빠르게 답변 드리겠습니다! 감사합니다!</p>
+                <div class="intro">
+                    <ul>
+                        <li>
+                            <p>Email</p>
+                            <h2>
+                                <a href="mailto:xgermanyx@naver.com">
+                                    <i class="far fa-envelope-open"></i>
+                                </a>
+                            </h2>
+                            <p>xgermanyx@naver.com</p>
+                        </li>
+                        <li>
+                            <p>Phone</p>
+                            <h2>
+                                <a href="tel:+821076325433">
+                                    <i class="fas fa-phone-alt"></i>
+                                </a>
+                            </h2>
+                            <p>01076325433</p>
+                        </li>
+                        <li>
+                            <p>Instagram</p>
+                            <h2>
+                                <a href="https://www.instagram.com/xger_12/">
+                                    <i class="far fa-grin-hearts"></i>
+                                </a>
+                            </h2>
+                            <p>Click!</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>  
+    </main>
+    
+</body>
+</html>
