@@ -245,6 +245,8 @@ svg circle:nth-child(2){
 #contact .act .intro ul li h2:hover{background-color:rgb(250, 255, 220); }
 
 @media (max-width:1300px){
+    .first_screen h3{color:indigo;}
+    .first_screen p{color:indigo;}
     #portfolio .popup ul li .wrap > div.port_img .memo{right: 40%;}
 }
 
@@ -292,8 +294,13 @@ svg circle:nth-child(2){
     #contact .act .intro ul li h2{margin: 5px auto;}
 }
 
+@media (max-width:716px){
+    .first_screen h3{font-size: 36px;  }
+    .first_screen p{font-size: 28px; }
+}
+
 @media (max-width:700px){
-    header{opacity: 0; z-index: -10;}
+    header{opacity: 0; z-index: -10; height: 0;}
     header.sticky{z-index: -10;}
 
     #contact .act > p{word-break: keep-all;}
@@ -307,6 +314,9 @@ svg circle:nth-child(2){
 }
 
 @media (max-width:575px){
+    .first_screen{background-position: 50% 0%;}
+    .first_screen h3{font-size: 32px; width: 60%; padding-left: 5%;}
+    .first_screen p{font-size: 25px; width: 60%; padding-left: 5%;}
     .about .intro{flex-direction: column; justify-content: center;}
     .about .picture .img{margin-top: 6%;}
     .about .picture .img .outerline{display: none;}
