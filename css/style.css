@@ -228,6 +228,7 @@ svg circle:nth-child(2){
 #sentences .act .main .right_part button:hover{background-color: #fef; color: #ffe345;}
 
 /*********************contact*************************/
+
 #contact{width: 100%;  background:whitesmoke; background-image: url(../img/bg1_1.jpg); background-size: cover; background-position: 50% 70%;}
 #contact .act{width: 100%; height: 100%;padding: 12% 0;  position: relative; margin: 0 auto;}
 
@@ -245,12 +246,14 @@ svg circle:nth-child(2){
 #contact .act .intro ul li h2:hover{background-color:rgb(250, 255, 220); }
 
 @media (max-width:1300px){
+    main .box .act{opacity: 1;}
     .first_screen h3{color:indigo;}
     .first_screen p{color:indigo;}
     #portfolio .popup ul li .wrap > div.port_img .memo{right: 40%;}
 }
 
 @media (max-width:1199px){
+    main .box .act{opacity: 1;}
     section{height: auto;}
     .about .intro{align-items: flex-start;}
     .about .act > h2{margin-top: 5%;}
@@ -273,7 +276,7 @@ svg circle:nth-child(2){
     #skill .cont_frame .cont_box .card .back .details .cont p{font-size: 17px;}
 
     #portfolio{height: 100vh;}
-    #portfolio .popup ul.slick-initialized{height: auto; }
+    #portfolio .popup ul.slick-initialized{height: 80%; }
     #portfolio .popup ul li .wrap{width: auto;}
     #portfolio .popup ul li .wrap > div.port_img .memo{right: 40%;}
 
@@ -292,6 +295,15 @@ svg circle:nth-child(2){
     #contact .act .intro ul li:last-child{margin: 0 30%;}
     
     #contact .act .intro ul li h2{margin: 5px auto;}
+
+    #portfolio .popup .slick-next, #portfolio .popup .slick-prev{width: 20px; height: 20px;}
+
+    #portfolio .popup ul li .wrap > div.port_img .memo{width: 100px;}
+    #portfolio .popup ul li .wrap > div.port_img .memo h2{ font-size: 25px;}
+    #portfolio .popup ul li .wrap > div.port_img .memo p{ font-size: 12px; word-break: keep-all;}
+    #portfolio .popup ul li .wrap > div.port_img .link{width: 100px;}
+    #portfolio .popup ul li .wrap > div.port_img .link a span{ font-size: 22px;}
+    #portfolio .popup ul li .wrap > div.port_img .link a{font-size: 22px;}
 }
 
 @media (max-width:716px){
@@ -339,6 +351,12 @@ svg circle:nth-child(2){
    
    
    
+}
+@media (max-width:452px){
+    .first_screen{background-position: 50% 0%;}
+    .first_screen h3{font-size: 25px; width: 60%; padding-left: 5%;}
+    .first_screen p{font-size: 22px; width: 60%; padding-left: 5%;}
+    .about .intro{flex-direction: column; justify-content: center;}
 }
 
 
