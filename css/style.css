@@ -352,11 +352,23 @@ svg circle:nth-child(2){
    
    
 }
+@media (max-width:554px){
+    #portfolio .popup ul li .wrap > div.port_img .memo{display: none;}
+}
+
 @media (max-width:452px){
     .first_screen{background-position: 50% 0%;}
     .first_screen h3{font-size: 25px; width: 60%; padding-left: 5%;}
     .first_screen p{font-size: 22px; width: 60%; padding-left: 5%;}
     .about .intro{flex-direction: column; justify-content: center;}
+
+    #portfolio .popup .slick-dots li{margin: 0 1px;}
+   
+}
+
+@media (max-width:376px){
+    .first_screen h3{font-size: 20px; width: 60%; padding-left: 5%;}
+    .first_screen p{font-size: 16px; width: 60%; padding-left: 5%;}
 }
 
 
